@@ -134,16 +134,17 @@ button{
     align-items: center;
 }
 @media (max-width: 1200px) {
-    .setup-box input[type="color"] {
-        width: 44px;
-        height: 32px;
-        padding: 2px;
-        border-radius: 50%;
-    }
-
     .scoreboard-container {
         flex-direction: column;
         justify-content: space-evenly;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .player-card {
+        flex: 1;
+        justify-content: center;
+        width: 100%;
     }
 
     .player-card p {
@@ -163,26 +164,30 @@ button{
         display: none;
     }
 
-   .setup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 9999;
-}
+    .setup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+    }
 
     .setup-box {
         width: 85vw;
         padding: 24px;
-        max-height: 90vh;
+        max-height: 85vh;
         overflow-y: auto;
     }
-}
-body.overlay-active {
-    overflow: hidden;
+
+    .setup-box input[type="color"] {
+        width: 44px;
+        height: 32px;
+        padding: 2px;
+        border-radius: 50%;
+    }
 }
