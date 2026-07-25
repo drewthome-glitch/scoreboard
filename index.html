@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scoreboard</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        </head>
+    <body>
+    <div class="setup-overlay" id="setup-overlay">
+    <div class="setup-box">
+        <h2>Game Settings</h2>
+        <p>Customize your game with the options below!</p>
+        <label>Player 1 Name</label>
+        <input type="text" id="player1-name-input" placeholder="Player 1 name">
+        <label>Player 1's Color</label>
+        <input type="color" id="player1-color-input">
+
+        <label>Player 2 Name</label>
+        <input type="text" id="player2-name-input" placeholder="Player 2 name">
+        <label>Player 2's Color</label>
+        <input type="color" id="player2-color-input">
+
+        <input type="number" id="win-target-input" placeholder="Points to win">
+
+        <button id="start-game-button">Start Game</button>
+    </div>
+</div>
+
+<div class="win-overlay" id="win-overlay">
+    <div class="setup-box">
+        <h2 id="winner-message">Player Won!</h2>
+        <button id="restart-button">Restart</button>
+    </div>
+</div>
+    <div class="scoreboard-container">
+        <div class="player-card">
+            <h3 id="player1-name">Player 1</h3>
+            <p id="player1-score">0</p>
+            <button id="player1-plus">+1</button>
+            <button id="player1-minus">-1</button>
+            <button id="player1-reset">Reset</button>
+        </div>
+        <div class="honeycomb">
+    <div class="hexagon-line offset" id="js-hexagon-line-offset">
+    </div>
+
+        <div class="hexagon-line" id="js-hexagon-line">
+        </div>
+        </div>
+        <div class="player-card">
+            <h3 id="player2-name">Player 2</h3>
+            <p id="player2-score">0</p>
+            <button id="player2-plus">+1</button>
+            <button id="player2-minus">-1</button>
+            <button id="player2-reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
