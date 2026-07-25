@@ -4,6 +4,7 @@ let screenHieght = window.innerHeight;
 let hexagonHieght = 44;
 let numberOfHexagons = Math.floor(screenHieght / hexagonHieght);
 document.body.classlist.add("overlay-active");
+document.querySelector(".scoreboard-container").classList.add("hidden");
 
 function createHexagon(targetId) {
     let svgNamespace = "http://www.w3.org/2000/svg";
@@ -110,6 +111,7 @@ startGameButton.addEventListener("click", function() {
     let player2Color = player2ColorInput.value;
     winTarget = Number(winTargetInput.value);
     document.body.classlist.remove("overlay-active");
+    document.querySelector(".scoreboard-container").classList.remove("hidden");
 
     document.querySelector("#player1-name").textContent = player1Name;
     document.querySelector("#player2-name").textContent = player2Name;
