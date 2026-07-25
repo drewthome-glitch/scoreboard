@@ -177,25 +177,26 @@ button{
         display: none;
     }
 
-    .setup-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: calc(var(--vh, 1vh) * 100);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 9999;
-    }
+   .setup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    z-index: 9999;
+    -webkit-overflow-scrolling: touch;
+}
 
-    .setup-box {
-        width: 85vw;
-        padding: 24px;
-        max-height: 85vh;
-        overflow-y: auto;
-    }
+   .setup-box {
+    pointer-events: all;
+    -webkit-overflow-scrolling: touch;
+}
 
     .setup-box input[type="color"] {
         width: 44px;
