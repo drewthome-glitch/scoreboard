@@ -133,7 +133,7 @@ button{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 932px) {
+@media (max-width: 1200px) {
     .scoreboard-container {
         flex-direction: column;
         justify-content: space-evenly;
