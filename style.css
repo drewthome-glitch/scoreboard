@@ -136,6 +136,9 @@ button{
     justify-content: center;
     align-items: center;
 }
+.scoreboard-container.hidden {
+    pointer-events: none;
+}
 @media (max-width: 1200px) {
     html, body {
         height: 100%;
