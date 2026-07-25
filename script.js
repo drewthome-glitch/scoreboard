@@ -1,3 +1,4 @@
+document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px');
 console.log("Screen width:", window.innerWidth);
 let screenHieght = window.innerHeight;
 let hexagonHieght = 44;
