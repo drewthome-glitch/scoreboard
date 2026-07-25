@@ -152,6 +152,7 @@ button{
         overflow: hidden;
         position: relative;
         z-index: 1;
+        background: linear-gradient(to bottom, var(--player1-color, #02fdff), var(--player2-color, #ff40ff));
     }
 
     .player-card {
