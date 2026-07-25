@@ -135,6 +135,7 @@ button{
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 .scoreboard-container.hidden {
     pointer-events: none;
@@ -178,7 +179,7 @@ button{
         display: none;
     }
 
-   .setup-overlay {
+ .setup-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -186,6 +187,7 @@ button{
     height: 100%;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +195,6 @@ button{
     z-index: 9999;
     -webkit-overflow-scrolling: touch;
 }
-
    .setup-box {
     pointer-events: all;
     -webkit-overflow-scrolling: touch;
