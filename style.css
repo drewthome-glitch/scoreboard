@@ -181,3 +181,6 @@ button{
         overflow-y: auto;
     }
 }
+body.overlay-active {
+    overflow: hidden;
+}
