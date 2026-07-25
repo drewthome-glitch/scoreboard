@@ -135,12 +135,11 @@ button{
 }
 @media (max-width: 1200px) {
     .scoreboard-container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100vh;
-        overflow: hidden;
-    }
-
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
+}
     .player-card {
         flex: 1;
         justify-content: center;
@@ -164,18 +163,18 @@ button{
         display: none;
     }
 
-    .setup-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 9999;
-    }
+   .setup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
 
     .setup-box {
         width: 85vw;
