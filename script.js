@@ -1,3 +1,4 @@
+console.log("Screen width:", window.innerWidth);
 let screenHieght = window.innerHeight;
 let hexagonHieght = 44;
 let numberOfHexagons = Math.floor(screenHieght / hexagonHieght);
